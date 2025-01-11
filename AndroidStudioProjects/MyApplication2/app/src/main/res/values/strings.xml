@@ -1,20 +1,7 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="button_true">Prawda</string>
-    <string name="button_false">Fałsz</string>
-    <string name="button_next">Następny</string>
-    <string name="button_prompt">Podpwiedź</string>
-
-    <string name="q_activity">Activity jest jednym z komponentów aplikacji Android</string>
-    <string name="q_version">Moja ulbiona zupa to żurek</string>
-    <string name="q_listener">Ziemnaki sa lepsze niż ryż</string>
-    <string name="q_resources">2 + 2 = 5</string>
-    <string name="q_find_resources">W piątki nie mam zajęć na uczelni</string>
-
-    <string name="correct_answer">Twoja odpowiedz jest poprawna!</string>
-    <string name="incorrect_answer">Twoja odpowiedz jest zla</string>
-
-    <string name="answer_was_shown">Odpowiedź była już wyświetlona</string>
-
-
+    <string name="app_name">TodoApp</string>
+    <string name="task_name_hint">Wprowadź nazwę zadania</string>
+    <string name="task_name_label">Nazwa</string>
+    <string name="task_details_label">Szczegóły</string>
+    <string name="task_done_label">Wykonane</string>
 </resources>
