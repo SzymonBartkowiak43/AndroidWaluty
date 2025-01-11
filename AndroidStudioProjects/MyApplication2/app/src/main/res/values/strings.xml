@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">TodoApp</string>
-    <string name="task_name_hint">Wprowadź nazwę zadania</string>
-    <string name="task_name_label">Nazwa</string>
-    <string name="task_details_label">Szczegóły</string>
-    <string name="task_done_label">Wykonane</string>
-</resources>
