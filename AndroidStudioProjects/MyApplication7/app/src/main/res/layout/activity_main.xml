@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Spinner do wyboru waluty początkowej -->
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentStart="true" />
+
+    <!-- Spinner do wyboru waluty docelowej -->
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/fromSpinner" />
+
+    <!-- Pole wejściowe do wprowadzenia kwoty -->
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/fromSpinner"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Wprowadź kwotę"
+        android:inputType="numberDecimal"
+        android:textSize="18sp" />
+
+    <!-- Przycisk do przeliczania walut -->
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/amountInput"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Przelicz"
+        android:textSize="18sp" />
+
+    <!-- Pole tekstowe do wyświetlania wyniku -->
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertButton"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Wynik: "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Spinner do wyboru stolicy -->
+    <Spinner
+        android:id="@+id/capitalSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/resultView"
+        android:layout_marginTop="64dp"
+        android:layout_marginHorizontal="24dp" />
+
+    <!-- Przycisk do przeniesienia na mapę -->
+    <Button
+        android:id="@+id/goToMapButton"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/capitalSpinner"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="Pokaż na mapie"
+        android:textSize="18sp" />
+
+</RelativeLayout>

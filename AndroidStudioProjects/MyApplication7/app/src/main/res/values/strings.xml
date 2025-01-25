@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nazwa aplikacji -->
+    <string name="app_name">My Application</string>
+
+    <!-- Etykiety przycisków -->
+    <string name="button_convert">Convert</string>
+    <string name="button_reset">Reset</string>
+
+    <!-- Teksty dla widoków -->
+    <string name="label_from_currency">From Currency:</string>
+    <string name="label_to_currency">To Currency:</string>
+    <string name="label_amount">Amount:</string>
+    <string name="label_result">Result:</string>
+
+    <!-- Komunikaty błędów -->
+    <string name="error_invalid_amount">Please enter a valid amount</string>
+    <string name="error_no_rates">Exchange rates have not been loaded yet</string>
+    <string name="error_no_rate_found">Exchange rate not found</string>
+
+    <!-- Komunikaty informacyjne -->
+    <string name="info_reset_data">Data has been reset!</string>
+
+    <string name="back">Back</string>
+</resources>

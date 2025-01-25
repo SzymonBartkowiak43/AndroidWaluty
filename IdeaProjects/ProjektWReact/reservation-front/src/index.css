@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Global app container */
+.app-content {
+  margin-top: 70px; /* Dostosuj wysokość do faktycznej wysokości nagłówka */
+  padding: 20px;
+}
