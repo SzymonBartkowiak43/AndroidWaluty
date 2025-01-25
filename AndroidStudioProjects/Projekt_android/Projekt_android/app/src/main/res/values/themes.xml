@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.Projekt_android" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Dodaj swoje kolory i inne atrybuty tutaj -->
+    </style>
+</resources>

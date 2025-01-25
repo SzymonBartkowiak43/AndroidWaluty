@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Projekt_android</string>
+    <string name="amount_hint">Enter amount</string>
+    <string name="convert_button_text">Convert</string>
+    <string name="result_text">Result will appear here</string>
+    <string name="google_maps_key">AIzaSyAo0bXFa6FmuWTGf-tG2U8B1VzBp0sBRWI</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>
