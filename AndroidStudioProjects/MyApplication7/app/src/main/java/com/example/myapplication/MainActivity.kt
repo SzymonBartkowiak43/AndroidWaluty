@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         setContentView(R.layout.activity_main)
 
         try {
-            // Inicjalizacja widoków
             fromSpinner = findViewById(R.id.fromSpinner)
             toSpinner = findViewById(R.id.toSpinner)
             amountInput = findViewById(R.id.amountInput)
@@ -58,11 +57,9 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 }
             }
 
-            // Inicjalizacja akcelerometru
             sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
             accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 
-            // Konfiguracja Retrofit
             val retrofit = Retrofit.Builder()
                 .baseUrl("https://api.nbp.pl/api/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -166,7 +163,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         if (acceleration > shakeThreshold) {
             amountInput.text?.clear()
             resultView.text = ""
-            Toast.makeText(this, "Reset danych!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Usuniecie", Toast.LENGTH_SHORT).show()
         }
     }
 

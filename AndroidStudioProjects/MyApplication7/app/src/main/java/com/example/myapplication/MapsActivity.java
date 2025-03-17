@@ -27,17 +27,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
-        // Inicjalizacja przycisku cofania
+
         ImageButton backButton = findViewById(R.id.backButton);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();  // Użycie domyślnego mechanizmu cofania
+                onBackPressed();
             }
         });
 
-        // Inicjalizacja mapy
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -47,12 +46,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Odbierz dane przesłane przez Intent
         String selectedCapital = getIntent().getStringExtra("capital");
         if (selectedCapital != null) {
             LatLng location = getCapitalCoordinates(selectedCapital);
             if (location != null) {
-                mMap.clear(); // Usunięcie poprzednich markerów
+                mMap.clear();
                 mMap.addMarker(new MarkerOptions().position(location).title(selectedCapital));
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 12));
             } else {
